@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {useDispatch } from 'react-redux';
+// import {useDispatch } from 'react-redux';
 // import { addcart } from '../redux/action'
 import { useParams } from 'react-router'
 import { NavLink } from 'react-router-dom';
@@ -9,7 +9,7 @@ const Product = () => {
   const { id } = useParams();
   const [Product, setProduct] = useState([]);
   const [Loading, setLoading] = useState(false);
-  const dispatch = useDispatch();
+//   const dispatch = useDispatch();
   // const addproduct = (Product) => {
  //   dispatch(addcart(Product));
   // }
