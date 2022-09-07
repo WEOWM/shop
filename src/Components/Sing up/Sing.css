@@ -1,0 +1,16 @@
+.container{
+    place-items: center center;
+
+}
+.form-card{
+    width: 65vh;
+    height: 78vh;
+}
+.form-group{
+    position: relative;
+    top: 1em;
+}
+.d-grid{
+    position: relative;
+    top: 20px;
+}

@@ -1,0 +1,20 @@
+.form-card {
+    width: 58vh;
+    height: 55vh;
+    position: relative;
+    top: 4em;
+  
+
+}
+.text-center{
+    position: relative;
+    font-size: 20px;
+    bottom: 20px;
+    
+}
+.form-group{
+    width: 16em;
+}
+.btn1{
+   width: 80px;
+}
