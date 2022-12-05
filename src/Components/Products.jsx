@@ -74,7 +74,7 @@ const Products = () => {
                     return (
                         <div className="col-md-3 mb-4 pb-1">
                             <div className="card h-100 text-center p-4"key={Produt.id} >
-                                <img src={Produt.image} className="card-img-top" alt={Produt.title} height='250px'/>
+                                <img src={Produt.image} className="card-img-top w-100" alt={Produt.title} height='250px'/>
                                     <div className="card-body">
                                         <h5 className="card-title mb-0">{Produt.title.substring(0,12)}..</h5>
                                         <p className="card-text lead fw-bold"> ₹ {Produt.price}</p>
