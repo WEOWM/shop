@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton'
 import { NavLink } from 'react-router-dom';
+import './Products.css'
 
 
 
@@ -65,15 +66,15 @@ const Products = () => {
                         
                 <div className="buttons d-flex  justify-content-center mb-5 py-5">
                     <button className='btn btn-outline-dark me-2' onClick={()=>setFliter(Data)}>All</button>
-                    <button className='btn btn-outline-dark me-2'onClick={()=>fliterproduct("men's clothing")}>Men's clothing</button>
                     <button className='btn btn-outline-dark me-2'onClick={()=>fliterproduct("women's clothing")}>Women's clothing</button>
+                    <button className='btn btn-outline-dark me-2'onClick={()=>fliterproduct("men's clothing")}>Men's clothing</button>
                     <button className='btn btn-outline-dark me-2'onClick={()=>fliterproduct("jewelery")}>Jewelery</button>
                     <button className='btn btn-outline-dark me-2'onClick={()=>fliterproduct("electronics")}>Electronics</button>
                 </div>
                 {Fliter.map((Produt) => {
                     return (
-                        <div className="col-md-3 mb-4 pb-1">
-                            <div className="card h-100 text-center p-4"key={Produt.id} >
+                        <div className="card-d col-md-3 mb-4 pb-1" key={Produt.id}>
+                            <div className="card h-100 text-center p-4">
                                 <img src={Produt.image} className="card-img-top w-100" alt={Produt.title} height='250px'/>
                                     <div className="card-body">
                                         <h5 className="card-title mb-0">{Produt.title.substring(0,12)}..</h5>
