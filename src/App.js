@@ -7,6 +7,7 @@ import Login from './Components/Login.in/Login'
 import Sing from './Components/Sing up/Sing'
 import Product from './Components/Product'
 import Products from './Components/Products'
+import Cart from './Components/Cart'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/products' element={<Products />} />
         <Route path='/products/:id' element={<Product />} />
+        <Route path='/cart' element={<Cart />} />
 
 
 
